@@ -1,0 +1,9 @@
+[tasks.build]
+command = "cp"
+args = ["./target/release/libprochide.so", "./"]
+dependencies = ["build_library"]
+
+[tasks.build_library]
+command = "cargo"
+args = ["build", "--release"]
+

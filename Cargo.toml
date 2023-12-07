@@ -1,0 +1,14 @@
+[package]
+name = "prochide"
+version = "0.1.0"
+authors = ["n01e0 <reoshiseki@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "prochide"
+crate_type = ["dylib"]
+
+
+[dependencies]
+libc = "0.2.103"
+redhook = { git = "https://github.com/n01e0/redhook" }
